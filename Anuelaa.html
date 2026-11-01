@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#030303">
+<title>ANUEL AA — RHLM COMMUNITY</title>
+<style>
+:root{--site-background:#030303;--site-primary:#e10613;--site-secondary:#5b0007;--site-on-primary:#fff;--site-on-secondary:#fff;--site-on-background:#f5f5f5;--site-font-body:Arial,Helvetica,sans-serif;--site-font-heading:Arial Black,Arial,sans-serif;--site-heading-scale:1;--site-spacing-scale:1;--site-radius-scale:1;--site-decoration-opacity:.15;--r:#e10613;--line:#222;--muted:#8d8d8d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#030303;color:#f5f5f5;font-family:var(--site-font-body);line-height:1.4}a{color:inherit;text-decoration:none}img{display:block;width:100%;height:100%;object-fit:cover}.wrap{width:min(1120px,calc(100% - 24px));margin:auto}
+.nav{position:sticky;top:0;z-index:20;background:rgba(3,3,3,.92);backdrop-filter:blur(12px);border-bottom:1px solid #1d1d1d}.navin{height:56px;display:flex;align-items:center;justify-content:space-between}.brand{font:bold 13px Arial Black,Arial;letter-spacing:.08em}.brand b{color:var(--r)}.links{display:flex;gap:18px;font-size:9px;font-weight:900;text-transform:uppercase;color:#999}.links a:hover{color:#fff}.btn{display:inline-flex;align-items:center;justify-content:center;height:42px;padding:0 16px;border:1px solid #363636;border-radius:3px;font-size:9px;font-weight:900;text-transform:uppercase;letter-spacing:.1em}.red{background:var(--r);border-color:var(--r);color:#fff}
+.hero{height:calc(100vh - 56px);min-height:590px;max-height:900px;position:relative;display:flex;align-items:flex-end;overflow:hidden}.heroimg{position:absolute;inset:0}.heroimg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#030303 0%,rgba(3,3,3,.82) 33%,rgba(3,3,3,.25) 72%,rgba(3,3,3,.72)),linear-gradient(0deg,#030303 0%,transparent 50%,rgba(0,0,0,.35))}.heroimg img{filter:contrast(1.12) brightness(.72);object-position:center 20%}.heroct{position:relative;z-index:2;padding-bottom:36px}.tag{display:inline-block;background:var(--r);padding:6px 9px;font-size:8px;font-weight:900;letter-spacing:.15em;margin-bottom:14px}.hero h1{font:900 clamp(54px,12vw,125px)/.78 Arial Black,Arial;margin:0;letter-spacing:-.075em;text-transform:uppercase;max-width:850px}.hero h1 .outline{color:transparent;-webkit-text-stroke:1px #eee}.hero p{max-width:580px;color:#ccc;font-size:13px;margin:18px 0}.actions{display:flex;gap:8px;flex-wrap:wrap}.stats{display:flex;margin-top:28px;border-top:1px solid #333;width:min(680px,100%)}.stats div{padding:12px 18px 0 0;margin-right:18px;border-right:1px solid #333}.stats div:last-child{border:0}.stats b{display:block;font-size:21px}.stats small{font-size:7px;color:#777;text-transform:uppercase}
+section{padding:58px 0}.head{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:22px}.eyebrow{font-size:8px;color:var(--r);font-weight:900;letter-spacing:.18em;text-transform:uppercase}.head h2{font:900 clamp(34px,6vw,64px)/.88 Arial Black,Arial;letter-spacing:-.06em;text-transform:uppercase;margin:6px 0 0}.muted{max-width:440px;color:#888;font-size:11px}
+.gallery{display:grid;grid-template-columns:1.35fr .65fr;gap:8px;height:510px}.pic{position:relative;overflow:hidden;background:#0a0a0a}.pic img{transition:.5s}.pic:hover img{transform:scale(1.03)}.pic:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.85),transparent 55%)}.caption{position:absolute;z-index:2;left:17px;bottom:16px}.caption b{font:900 23px Arial Black,Arial}.caption small{display:block;color:#aaa;font-size:8px;margin-top:3px}.stack{display:grid;grid-template-rows:1fr 1fr;gap:8px}.stack .pic{min-height:0}
+.songs{display:grid;grid-template-columns:1fr 1fr;gap:7px}.song{display:grid;grid-template-columns:42px 1fr auto;align-items:center;gap:12px;border:1px solid #1d1d1d;background:#070707;padding:10px 12px}.song:hover{border-color:#444;background:#0b0b0b}.rank{font:900 19px Arial Black,Arial;color:#444}.song b{font-size:11px}.song span{display:block;color:#666;font-size:8px;margin-top:2px}.play{width:27px;height:27px;border:1px solid #3a3a3a;border-radius:50%;display:grid;place-items:center;font-size:9px;color:#fff}
+.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.num{padding:17px 12px;background:#070707;border:1px solid #1e1e1e}.num b{font:900 27px Arial Black,Arial}.num span{display:block;color:#777;font-size:8px;text-transform:uppercase;margin-top:4px}.num small{display:block;color:#4f4f4f;font-size:7px;margin-top:7px}
+.news{border-left:3px solid var(--r);background:linear-gradient(90deg,#120000,#070707);padding:24px}.news h3{font:900 clamp(28px,5vw,52px)/.9 Arial Black,Arial;margin:7px 0 10px;letter-spacing:-.05em}.news p{color:#999;font-size:11px;max-width:700px}.pill{display:inline-block;border:1px solid #571319;color:#ff5960;padding:4px 7px;font-size:7px;font-weight:900;text-transform:uppercase}
+.socials{display:grid;grid-template-columns:repeat(6,1fr);gap:6px}.social{border:1px solid #202020;background:#070707;padding:15px 5px;text-align:center;font-size:8px;font-weight:900;text-transform:uppercase}.social:hover{border-color:#555}.cta{margin-top:8px;border:1px solid #2b2b2b;padding:32px 25px;background:#080808}.cta h2{font:900 clamp(35px,7vw,70px)/.85 Arial Black,Arial;margin:7px 0 12px;letter-spacing:-.06em}.cta p{font-size:11px;color:#888;max-width:570px;margin-bottom:20px}footer{border-top:1px solid #1d1d1d;padding:25px 0 35px;color:#555;font-size:8px}
+@media(max-width:750px){.links{display:none}.hero{min-height:620px;height:calc(100vh - 56px)}.heroimg img{object-position:62% center}.heroimg:after{background:linear-gradient(0deg,#030303 0%,rgba(3,3,3,.82) 32%,rgba(3,3,3,.2) 80%),linear-gradient(90deg,rgba(3,3,3,.45),rgba(3,3,3,.1))}.hero h1{font-size:clamp(52px,17vw,92px)}.stats div{padding-right:9px;margin-right:9px}.stats b{font-size:18px}.stats small{font-size:6px}.head{display:block}.head .muted{margin-top:10px}.gallery{height:440px;grid-template-columns:1fr}.gallery>.pic{min-height:260px}.stack{grid-template-columns:1fr 1fr;grid-template-rows:1fr}.songs{grid-template-columns:1fr}.nums{grid-template-columns:1fr 1fr}.socials{grid-template-columns:repeat(3,1fr)}}@media(max-width:430px){.gallery{height:420px}.song{grid-template-columns:32px 1fr auto}.rank{font-size:15px}.hero p{font-size:12px}.stats b{font-size:16px}.stats small{font-size:5px}}
+</style>
+
+<style>
+:root{--red:#e50914;--red2:#ff2430;--black:#050505;--panel:#0b0b0b;--line:#252525}
+body{background:var(--black)}
+.hero{min-height:92vh;height:auto;padding:76px 20px 42px;display:flex;align-items:flex-end}
+.hero-content{max-width:1120px;width:100%;margin:auto}
+.hero h1{font-size:clamp(4rem,15vw,10rem);line-height:.78;letter-spacing:-.075em;margin:18px 0 28px;font-weight:950}
+.hero h1 strong{color:#fff}
+.hero h1 em{color:var(--red);font-style:normal}
+.stats{margin-top:0!important}
+.compact-stats{display:grid!important;grid-template-columns:repeat(3,1fr);gap:8px!important;padding:10px!important;border:1px solid var(--line);background:#080808}
+.compact-stats>*{min-width:0;padding:13px 8px!important;border:1px solid #202020;background:#0d0d0d}
+.compact-stats b{display:block;font-size:clamp(1.15rem,4vw,2rem)}
+.compact-stats small{font-size:.58rem;letter-spacing:.12em;color:#999}
+section{padding:38px 18px!important}
+.fan-register{max-width:1050px;margin:0 auto 8px;display:grid;grid-template-columns:1.1fr .9fr;gap:18px;border:1px solid #252525;background:linear-gradient(135deg,#0b0b0b,#070707);padding:22px!important}
+.fan-copy small{color:var(--red);font-weight:800;letter-spacing:.16em}
+.fan-copy h2{font-size:clamp(1.7rem,6vw,3.2rem);line-height:.9;margin:9px 0 12px;color:#fff}
+.fan-copy h2 span{display:block;color:var(--red)}
+.fan-copy p{max-width:620px;color:#999;font-size:.82rem;line-height:1.45;margin:0}
+.fan-form{display:grid;gap:8px;align-content:center}
+.fan-form input{width:100%;box-sizing:border-box;background:#050505;border:1px solid #333;color:#fff;padding:13px 12px;border-radius:0;outline:none}
+.fan-form input:focus{border-color:var(--red)}
+.fan-form button{border:0;background:var(--red);color:#fff;padding:14px 12px;font-weight:900;letter-spacing:.05em;cursor:pointer}
+.ok{font-size:1.3rem;color:#fff;font-weight:900}
+@media(max-width:650px){
+.hero{min-height:82vh;padding:70px 14px 24px}
+.hero h1{font-size:clamp(3.7rem,17vw,6rem);margin:12px 0 20px}
+.compact-stats{grid-template-columns:repeat(3,1fr)!important}
+.compact-stats>*{padding:10px 5px!important}
+.fan-register{grid-template-columns:1fr;gap:16px;padding:18px!important}
+section{padding:30px 14px!important}
+}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap navin"><a class="brand" href="#inicio">ANUEL <b>AA</b></a><nav class="links"><a href="#historia">Historia</a><a href="#canciones">Canciones</a><a href="#numeros">Números</a><a href="#redes">Redes</a></nav><a class="btn red" href="#unete">Unite</a></div></header>
+
+<main id="inicio">
+<section class="hero"><div class="heroimg"><img src="https://www.billboard.ar/wp-content/uploads/2025/09/IMG_2147-819x1024.jpg" alt="Anuel AA en vivo"></div><div class="wrap heroct"><span class="tag">RHLM COMMUNITY · 2026</span><h1>REAL<br>HASTA<br><span class="outline">LA MUERTE</span></h1><p>De la calle al mundo. La comunidad que sigue cada etapa, cada lanzamiento y cada movimiento de Anuel AA.</p><div class="actions"><a class="btn red" href="#unete">Entrar a RHLM</a><a class="btn" href="#canciones">Escuchar clásicos</a></div><div class="stats"><div><b>47.8M</b><small>Oyentes mensuales</small></div><div><b>51.5M</b><small>Seguidores Spotify</small></div><div><b>42.5B</b><small>Streams Spotify</small></div></div></div></section>
+
+<section id="historia"><div class="wrap"><div class="head"><div><div class="eyebrow">La historia</div><h2>De abajo<br>hasta arriba.</h2></div><p class="muted">Trap, calle, reggaetón y una identidad que convirtió RHLM en una de las marcas más reconocibles del movimiento urbano.</p></div><div class="gallery"><article class="pic"><img src="https://cloudfront-us-east-1.images.arcpublishing.com/elcomercio/PPFVOT7SWJDD3DZRFSCP23ZHYA.png" alt="Anuel AA"><div class="caption"><b>ANUEL AA</b><small>REAL HASTA LA MUERTE</small></div></article><div class="stack"><article class="pic"><img src="https://los40.cl/resizer/v2/OPYDY2PSQFAX7O7TQKOJUVSCCQ.jpg?auth=8a95df6a04f23627657d44b7630983de30f8e882dbed468ce8a433bfe298adae&height=768&quality=70&smart=true&width=768" alt="Anuel AA"><div class="caption"><b>LA CALLE</b><small>TRAP & REGGAETÓN</small></div></article><article class="pic"><img src="https://streetartlatam.s3.amazonaws.com/production/medium_Real_Hasta_La_M_Uerte_2_2025_Anuel_AA_1_ed43f41f4d.jpg" alt="Anuel AA"><div class="caption"><b>RHLM</b><small>UNA IDENTIDAD PROPIA</small></div></article></div></div></div></section>
+
+<section id="canciones"><div class="wrap"><div class="head"><div><div class="eyebrow">Top tracks</div><h2>Las que<br>hicieron historia.</h2></div><p class="muted">Ordenadas por streams acumulados de Spotify entre las canciones donde Anuel aparece. Cifras consultadas el 26/10/2026. citeturn0search0</p></div>
+<div class="songs">
+<a class="song" href="https://open.spotify.com/search/China%20Anuel%20AA" target="_blank" rel="noopener"><span class="rank">01</span><div><b>China</b><span>1.46B streams · con Daddy Yankee, KAROL G, Ozuna y J Balvin</span></div><i class="play">▶</i></a>
+<a class="song" href="https://open.spotify.com/search/Amanece%20Anuel%20AA" target="_blank" rel="noopener"><span class="rank">02</span><div><b>Amanece</b><span>1.33B streams</span></div><i class="play">▶</i></a>
+<a class="song" href="https://open.spotify.com/search/Sola%20Remix%20Anuel%20AA" target="_blank" rel="noopener"><span class="rank">03</span><div><b>Sola (Remix)</b><span>1.10B streams</span></div><i class="play">▶</i></a>
+<a class="song" href="https://open.spotify.com/search/Adicto%20Anuel%20AA" target="_blank" rel="noopener"><span class="rank">04</span><div><b>Adicto</b><span>999M streams · Tainy, Ozuna & Anuel AA</span></div><i class="play">▶</i></a>
+<a class="song" href="https://open.spotify.com/search/Hasta%20Que%20Dios%20Diga%20Anuel%20AA" target="_blank" rel="noopener"><span class="rank">05</span><div><b>Hasta Que Dios Diga</b><span>989M streams · con Bad Bunny</span></div><i class="play">▶</i></a>
+<a class="song" href="https://open.spotify.com/search/Ella%20Quiere%20Beber%20Remix%20Anuel%20AA" target="_blank" rel="noopener"><span class="rank">06</span><div><b>Ella Quiere Beber (Remix)</b><span>973M streams · con Romeo Santos</span></div><i class="play">▶</i></a>
+<a class="song" href="https://open.spotify.com/search/Secreto%20Anuel%20AA" target="_blank" rel="noopener"><span class="rank">07</span><div><b>Secreto</b><span>944M streams · con KAROL G</span></div><i class="play">▶</i></a>
+<a class="song" href="https://open.spotify.com/search/La%20Jeepeta%20Remix%20Anuel%20AA" target="_blank" rel="noopener"><span class="rank">08</span><div><b>La Jeepeta (Remix)</b><span>782M streams · colaboración urbana</span></div><i class="play">▶</i></a>
+</div></div></section>
+
+<section id="numeros"><div class="wrap"><div class="head"><div><div class="eyebrow">El impacto</div><h2>Números<br>pesados.</h2></div><p class="muted">El catálogo de Anuel supera los 42.5 mil millones de streams acumulados en Spotify según el registro consultado. citeturn0search0</p></div><div class="nums"><div class="num"><b>42.5B</b><span>Streams Spotify</span><small>Actualizado 26/10/2026</small></div><div class="num"><b>47.8M</b><span>Oyentes mensuales</span><small>Chartmetric · consulta 26/10/2026</small></div><div class="num"><b>51.5M</b><span>Seguidores Spotify</span><small>Chartmetric · consulta 26/10/2026</small></div><div class="num"><b>30M</b><span>Suscriptores YouTube</span><small>Chartmetric · consulta 26/10/2026</small></div></div></div></section>
+
+<section><div class="wrap"><div class="news"><span class="pill">Último movimiento · 2026</span><h3>RHLM 2: vuelve a las raíces.</h3><p>Anuel anunció en Billboard Latin Music Week que prepara <b>Real Hasta La Muerte 2</b> para noviembre de 2026 y también un álbum completo de corridos. Adelantó temas como “Ya Perdió La Fe”, “Se Tocó El Totico Con Mi Glock”, “Red Flag” y “Sexo No Más”. citeturn0search4turn0news24</p><a class="btn red" href="https://music.apple.com/us/artist/anuel-aa/996166916" target="_blank" rel="noopener">Ver lanzamientos</a></div></div></section>
+
+<section id="redes"><div class="wrap"><div class="head"><div><div class="eyebrow">Oficial</div><h2>Seguile.<br>Escuchalo.</h2></div><p class="muted">Accesos directos a sus principales canales y plataformas.</p></div><div class="socials"><a class="social" href="https://www.instagram.com/anuel/" target="_blank">Instagram</a><a class="social" href="https://www.tiktok.com/@anuel" target="_blank">TikTok</a><a class="social" href="https://www.youtube.com/@anuelaa" target="_blank">YouTube</a><a class="social" href="https://open.spotify.com/artist/2R21vXR83lH98kGeO99Y66" target="_blank">Spotify</a><a class="social" href="https://music.apple.com/us/artist/anuel-aa/996166916" target="_blank">Apple Music</a><a class="social" href="https://twitter.com/Anuel_2bleA" target="_blank">X</a></div></div></section>
+
+<section id="unete"><div class="wrap"><div class="cta"><div class="eyebrow">RHLM COMMUNITY</div><h2>SI SOS REAL,<br>ENTRÁ.</h2><p>Noticias, lanzamientos, música, clips y comunidad. Un espacio hecho por fans para fans.</p><!-- AQUÍ VA EL ENLACE REAL DE TU FAN PAGE / WHATSAPP / TELEGRAM --><a class="btn red" href="https://www.instagram.com/" target="_blank">Unirme ahora</a></div></div></section>
+</main>
+<footer><div class="wrap">FAN PAGE NO OFICIAL · ANUEL AA · REAL HASTA LA MUERTE · Estadísticas y posiciones pueden cambiar. Las marcas, música, nombre e imágenes pertenecen a sus respectivos titulares.</div></footer>
+</body></html>
